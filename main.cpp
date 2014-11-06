@@ -12,6 +12,7 @@ int main()
     double len = v.Length();
     v = v.Normal() * len;
     p = p.Translate(v);
+    Point p0 = p;
     cout << p.GetX() << " " << p.GetY() << endl;
 
     Line l1(Point(1, 2), Point(2, 3));
